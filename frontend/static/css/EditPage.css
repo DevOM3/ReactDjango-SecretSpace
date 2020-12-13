@@ -1,0 +1,35 @@
+.editPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex: 0.79;
+}
+
+.editPage > form {
+  margin-top: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 51vw;
+  max-width: 771px;
+}
+
+.editPage > form > label > .MuiAvatar-circle {
+  cursor: pointer;
+}
+
+.editPage__passwordGroup {
+  margin-top: 11px;
+  margin-bottom: 21px;
+  width: 51vw;
+  max-width: 771px;
+  display: flex;
+  flex-direction: row;
+}
+
+.editPage__passwordGroupSeparator {
+  width: 11px;
+  height: 11px;
+}

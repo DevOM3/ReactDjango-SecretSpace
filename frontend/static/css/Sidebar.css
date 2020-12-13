@@ -1,0 +1,183 @@
+.sidebar {
+  flex: 0.21;
+  height: 100vh;
+  background-color: #010101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar__top > .MuiAvatar-circle {
+  border: 2px solid white;
+  background: linear-gradient(
+    red,
+    orange,
+    yellow,
+    greenyellow,
+    lightgreen,
+    green,
+    lightblue,
+    blue,
+    indigo,
+    violet
+  );
+}
+
+.MuiAvatar-circle > .MuiAvatar-img {
+  border: 2px solid white;
+  height: 147px;
+  width: 147px;
+  z-index: 100;
+  border-radius: 50%;
+  transition: height 444ms ease-in-out, width 444ms ease-in-out;
+}
+
+.sidebar__name {
+  margin-top: 21;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+}
+
+.sidebar__bio {
+  margin-top: 0;
+  color: #dedede;
+  font-family: "Fira Sans", sans-serif;
+  padding-right: 11;
+  padding-left: 11;
+  text-align: center;
+}
+
+.sidebar > .sidebar__top > .MuiSvgIcon-root {
+  color: lightgreen;
+}
+
+.sidebar__numberOfSecret {
+  margin: 0;
+  color: greenyellow;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 3px;
+}
+
+.sidebar__secretsIcon {
+  transition: transform 444ms ease-in-out !important;
+}
+
+.sidebar__secretsIcon:hover {
+  transform: rotate(360deg) scale(1.24) scaleX(1.71);
+  color: white;
+}
+
+.sidebar__secretsIcon.MuiSvgIcon-root:hover {
+  color: greenyellow;
+}
+
+.sidebar__editIcon {
+  transition: transform 551ms ease-in-out !important;
+}
+
+.sidebar__editIcon:hover {
+  transform: rotate(360deg) scale(1.24);
+}
+
+.sidebar > .sidebar__top > .MuiButtonBase-root > .MuiIconButton-label {
+  margin-top: 11px;
+}
+
+.sidebar
+  > .sidebar__top
+  > .MuiButtonBase-root
+  > .MuiIconButton-label
+  > .MuiSvgIcon-root {
+  color: orange;
+}
+
+.sidebar__logoutButtonContainer {
+  margin-bottom: 21px;
+  cursor: pointer;
+  border: 2px solid red;
+  border-radius: 11px;
+  transition: all 444ms ease-in-out;
+}
+
+.sidebar__logoutText {
+  margin-left: 21px;
+  margin-right: 21px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  color: tomato;
+  font-family: "Montserrat", sans-serif;
+  transition: all 471ms ease-in-out;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+
+.MuiAvatar-circle > .MuiAvatar-img:hover {
+  height: 160px;
+  width: 160px;
+}
+
+.sidebar__logoutButtonContainer:hover {
+  background-color: red;
+  border: 2px solid white;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 21px;
+}
+
+.sidebar__fullname > span {
+  white-space: pre;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-21px);
+  transition: all 2.1s ease;
+}
+
+span.fullname {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.sidebar__username > span {
+  white-space: pre;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(51px);
+  transition: all 1.11s ease;
+}
+
+span.username {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.sidebar__bio > span {
+  white-space: pre;
+  display: inline-block;
+  opacity: 0;
+  transition: all 4s ease-in-out;
+}
+
+span.bio {
+  opacity: 1;
+}
+
+.sidebar__numberOfSecret > span {
+  white-space: pre;
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-111px);
+  transition: all 1s ease-in-out;
+}
+
+span.no {
+  transform: translateX(0px);
+  opacity: 1;
+}
